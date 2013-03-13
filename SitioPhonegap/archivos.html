@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Archivos</title>
+
+<script src="phonegap-1.1.0.js"></script>
+
+<script>
+//API para leer archivos en Phonegap
+document.addEventListener("load",function(){// con esta funcion sabemos que la page esta totamente carga parecida al deviceready
+	document.addEventListener("deviceready",function(){
+		//Trabajamos con archivos en Phonegap
+		window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, archivosDisponibles, function(){
+			navigator.notification.alert("No esta disponible el sistema de archivos");
+			});
+		
+	}, false);
+}, false);
+
+//Funcion para administrar los archivos disponibles
+function achivosDisponibles(fileSystem){
+	fileSystem.root.getFile("ayuda.txt", null, archivoLeido, function(){
+		navigator.notification.alert("No esta disponible el sistema de archivos");
+		});
+}
+
+//Funcion para leer los archivos
+function archivoLeido(archivo){
+	archivo.file(
+	function(archivo){
+		//Pedimos que lo lea de forma binaria
+		var lector = new FileReader();
+		lector.onloadend = function(evento){
+			alert(evento.target.result);
+		}
+		reader.readAsText(archivo);
+	}, function(){
+		//Error
+	});
+}
+
+
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

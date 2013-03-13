@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contactos</title>
+<script src="phonegap-1.1.0.js"></script>
+
+<script>
+// API para manejar los conactos del telefono
+document.addEventListener("deviceready",function(){
+	//Agregar contactos en el dispositivo
+	document.getElementById("btnAgregar").addEventListener("click", function(){
+		var contacto = navigator.contacts.create();
+		contacto.displatName = "Ariel Duarte";	
+		
+		contacto.name = new ContactName();
+		contacto.name.givenName = "Ariel";
+		contacto.name.familyName = "Duarte";
+		
+		contacto.phoneNumbers = [];
+		contacto.phoneNumbers[0] = new ContactField("Movil", "03624 249010", true);
+		
+		contacto.save(function(){alert("OK");}, function(){alert("Error")});
+	},false);
+	
+	//Leer contactos del dispositivo
+	document.getElementById("btnLeer").addEventListener("click", function(){
+		navigator.contacts.find(["*"], 
+			function(contactos){
+				for(var i=0; i<contactos.length; i++){
+					var contacto = contactos[i];
+					alert("Nombre :"+contacto.displayName);
+				}
+				
+			}, function(){alert("Error: No se pudo leer los conactos");});
+	}, false);
+	
+}, false);
+</script>
+</head>
+<input type="button" id="btnAgregar">
+<input type="button" id="btnLeer">
+<body>
+
+</body>
+</html>

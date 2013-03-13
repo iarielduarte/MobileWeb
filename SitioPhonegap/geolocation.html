@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Geolocalizacion</title>
+Mientras emulemos la aplicacion en Ripple
+<script src="phonegap-1.1.0.js"></script>
+
+<script>
+//Esta seria la API para poder utilizar la geolocalizacion
+document.addEventListener("deviceready",function(){
+	navigator.geolocation.getCurrentPosition(function(posicion){
+		alert("Se te ha ubicado en "+ posicion.coords.latitude + " y "+ 
+				posicion.coords.logitude);
+	}, function(){
+		alert("No se ha podido ubicar a tu dispositivo");
+	});
+	
+//Esta seria la API para poder utilizar la brujula
+	navigator.compass.watchHeading(function(posicion){
+		alert("El usuario esta mirando: "+ posicion.magneticHeading);
+	}, function(){
+		alert("No se ha podido ubicar a tu dispositivo");
+	});
+	
+}, false);
+</script>
+</head>
+
+<body>
+Bienvenido a mi app Movil para Android
+</body>
+</html>

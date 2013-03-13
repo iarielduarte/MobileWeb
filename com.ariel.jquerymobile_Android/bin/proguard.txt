@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:29
+-keep class com.ariel.jquerymobile.DefaultActivity { <init>(...); }
+

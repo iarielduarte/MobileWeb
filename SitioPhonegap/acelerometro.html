@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PhoneGap Acelerometro</title>
+Mientras emulemos la aplicacion en Ripple
+<script src="phonegap-1.1.0.js"></script>
+
+<script>
+var acelerometroId;
+document.addEventListener("deviceready",function(){
+	//Funcion Js para verificar que todo esta listo para ejecutar funciones phonegap
+	acelerometroId = navigator.accelerometer.watchAcceleration(acelera, error);
+	
+	function error(){
+		alert("No se puede leer el acelerometro");
+	}
+	
+	function acelera(aceleracion){
+		//Captura valores del acelerometro 
+		
+		var x = aceleracion.x;
+		var y = aceleracion.y;
+		var z = aceleracion.z;
+		var time = aceleracion.timestamp; 
+	}
+	
+	}, false);
+	// mas informacion : http://docs.phonegap.com/en/2.5.0/cordova_accelerometer_accelerometer.md.html#Accelerometer
+</script>
+</head>
+
+<body>
+Bienvenido a mi app Movil para Android
+</body>
+</html>

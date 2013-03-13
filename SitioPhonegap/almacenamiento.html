@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Almacenamiento de Datos</title>
+
+<script src="phonegap-1.1.0.js"></script>
+
+<script>
+//API para almacenar datos en el dispotivo
+document.addEventListener("deviceready",function(){
+	//Agregamos datos utilizando localStorage (clave<string>, valor<string>)
+	localStorage.setItem("Nombre", "Ariel");
+	
+	//Leer
+	alert("Nombre almacenado :"+localStorage.getItem("Nombre"));
+	
+	//Eliminar
+	localStorage.removeItem("Nombre");
+	
+	//Elimina todo
+	localStorage.clear();
+	
+	
+}, false);
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

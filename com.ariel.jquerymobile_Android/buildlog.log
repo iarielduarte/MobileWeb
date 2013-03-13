@@ -1,0 +1,1272 @@
+WARNING: no splash screen was specified in app settings. using default.
+Clonando aplicación seed para Android
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\droidGap.bat "C:\Program Files\Adobe\Adobe Dreamweaver CS5.5\Configuration\NativeAppFramework\DWPhoneGap\android\PhoneGapApp" "JQMAndroid" com.ariel.jquerymobile 1.0 "C:\Program Files\Android\android-sdk" 6
+____________________
+</DW>
+CCreated project directory: C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile
+Created directory C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\src\com\ariel\jquerymobile
+Added file C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\src\com\ariel\jquerymobile\DefaultActivity.java
+Created directory C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\res
+Created directory C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\bin
+Created directory C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\libs
+Created directory C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\res\values
+Added file C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\res\values\strings.xml
+Created directory C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\res\layout
+Added file C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\res\layout\main.xml
+Added file C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\AndroidManifest.xml
+Added file C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\build.xml
+Added file C:\MobileWeb\com.ariel.jquerymobile_Android\com.ariel.jquerymobile\proguard-project.txt
+CLONE SUCCESSFUL
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+    [mkdir] Created dir: C:\MOBILE~1\COMARI~1.JQU\gen
+    [mkdir] Created dir: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+    [mkdir] Created dir: C:\MOBILE~1\COMARI~1.JQU\bin\dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 3 source files to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Pre-Dexing C:\Program Files\Android\android-sdk\tools\support\annotations.jar -> annotations-23306d58b89c9a8e6e1479880a70ed77.jar
+      [dex] Pre-Dexing C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar -> phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\splash.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\splash.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\splash.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\splash.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\splash.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\splash.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\splash.png: 45% size of source)
+   [crunch] Crunched 6 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Creating new property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 12 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,0s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/
+       [dx] 2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 10 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,0s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,0s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,0s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~1\COMARI~1.JQU
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~1\COMARI~1.JQU\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: jquerymobile
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for jquerymobile...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for jquerymobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~1\COMARI~1.JQU\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-33f9f07823a0609f0de8d6f39a2cf162.jar <- C:\MOBILE~1\COMARI~1.JQU\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~1\COMARI~1.JQU\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,0s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~1\COMARI~1.JQU\res
+   [crunch] To destination dir: C:\MOBILE~1\COMARI~1.JQU\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-hdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-ldpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~1\COMARI~1.JQU\res\drawable-mdpi\icon.png => C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~1\COMARI~1.JQU\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating jquerymobile-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~1\COMARI~1.JQU\bin\jquerymobile-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~1\COMARI~1.JQU\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds

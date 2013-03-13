@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eventos en PhoneGap</title>
+
+<script src="phonegap-1.1.0.js"></script>
+
+<script>
+//API para utilizar eventos en PhoneGap
+document.addEventListener("deviceready",function(){
+	//Eventos del ciclo de vida de la app
+	document.addEventListener("pause", function(){
+		//Ejecutamos algo cuando la aplicaicon esta en estado pausado
+	});
+	
+	document.addEventListener("resume", function(){
+		//Ejecutamos algo cuando la aplicaicon esta en estado resumen 
+	});
+	
+	document.addEventListener("online", function(){
+		//Ejecutamos algo cuando el usuario entra en internet 
+	});
+	
+	document.addEventListener("offline", function(){
+		//Ejecutamos algo cuando el usuario sale de internet 
+	});
+	
+	//Este evento solo funciona en Android y en Blackberry
+	document.addEventListener("backbutton", function(){
+		//Cuando queremos volver a la pantalla anterior
+		 
+	});
+	
+	//Este evento solo funciona en Android y en Blackberry
+	document.addEventListener("menubutton", function(){
+		//para utilizar menus contextuales
+	});
+	
+	//Este evento solo funciona en Blackberry
+	document.addEventListener("startcallbutton", function(){
+		//para realizar una llamada
+	});
+	
+	//Este evento solo funciona en Blackberry
+	document.addEventListener("endcallbutton", function(){
+		//para cancelar una llamada
+	});
+	
+	//Este evento solo funciona en Blackberry
+	document.addEventListener("volumendownbutton", function(){
+		//para bajar el volumen
+	});
+	
+	//Este evento solo funciona en Blackberry
+	document.addEventListener("volumenupbutton", function(){
+		//para subir el volumen
+	});
+	
+}, false);
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

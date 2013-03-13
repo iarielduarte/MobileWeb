@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html>
+<link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.5.min.js"></script>
+<!--Aqui hago un include para codigos JS (codigo para configurar el framework jQueryMobile)-->
+<!--<script src="init.js"></script>-->
+
+<script>
+<!--Codigo Js que va a ejecutar un cambio de pagina en un determinado tiempo-->
+/*$(document).bind("mobileinit", function(){
+	setTimeout(function(){
+		$.mobile.changePage("#page2", {
+				reverse: true,
+				transition: 'flip'
+			});
+	}, 10000);
+});*/
+</script>
+<!--Fin de codigo JavaScript-->
+<script src="jquery-mobile/jquery.mobile-1.0a3.min.js"></script>
+<head>
+<meta charset="utf-8">
+<title>JQuery Mobile</title>
+</head>
+
+<!--Pagina Home-->
+<body>
+<div data-role="page" id="page1" data-theme="b">
+	<div data-role="header">
+    	<h1>Home</h1>
+    </div>
+    <div data-role="content">	
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Search contect">
+			<li><a href="#page2">Service</a></li>
+            <li><a href="#page6">Help</a></li>
+            <li><a href="#page3">Company</a></li>
+			<li><a href="#page4">Contact</a></li>
+            <li><a href="#page7">Comunity</a></li>
+            <li><a href="#page5">About</a>
+                <a href="#infoautor">Autor</a>
+            </li>
+            
+		</ul>		
+	</div>
+    <div data-role="footer" data-position="fixed" data-id="footer_home">
+		<h4>SynergyApps ©2013</h4>
+    </div>
+</div>
+<!--FIN-->
+
+<!--Pagina 2 Servicios-->
+<div data-role="page" id="page2" data-theme="b">
+	<div data-role="header">
+   		 <h1>Services</h1>
+     </div>
+    <div data-role="content" align="center">
+     	<h2>Creating mobile solutions</h2>
+        <div data-role="controlgroup" data-type="vertical">
+        <a href="#android" data-role="button" data-icon="check" data-transition="pop" data-theme="c">Android Applications</a>
+        <a href="#ios" data-role="button" data-icon="check" data-transition="flip" data-theme="a">iOS Applications</a>
+        <a href="#webapp" data-role="button" data-icon="check" data-transition="fade" data-theme="e">Mobile Web Applications</a>
+        </div>
+    </div>
+    <div data-role="footer" class="ui-bar" data-position="fixed" data-id="footer2">
+   		<p align="center"><a href="#page1" data-role="button" data-icon="refresh" data-rel="back">Home</a></p>
+  </div>
+</div>
+<!--FIN-->
+
+<!--Pagina 3 compañia-->
+<div data-role="page" id="page3" data-theme="b">
+	<div data-role="header">
+   		 <h1>Company</h1>
+  	</div>
+    <div data-role="content" align="justify">
+     	<h1>SynergyApps </h1>
+     	<h4>____________________________</h4>
+     	<p>SysnergyApps Mobile Solutions this is a idea about building applications mobile on a learning enviorment by Ariel Duarte. </p> 
+              
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+   		 <p align="center"><a href="#page1" data-role="button" data-icon="refresh" data-rel="back">Home</a></p>
+  </div>
+ </div> 
+ <!--FIN-->
+ 
+<!--Pagina 6 Ayuda-->
+<div data-role="page" id="page6" data-theme="b">
+	<div data-role="header">
+   		 <h1>Help</h1>
+  	</div>
+    <div data-role="content" align="left">
+     	<p>Send us your questions!<p>
+        
+     	<a href="#confirm" data-role="button" data-rel="dialog">Send</a>
+              
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+   	  <p align="center"><a href="#page1" data-role="button" data-icon="refresh" data-rel="back">Home</a></p>
+  </div>
+ </div> 
+ <!--FIN-->
+ 
+ <!--Pagina Dialogo-->
+ <div data-role="page" id="confirm" data-theme="b">
+ 	<div data-role="header" align="left">
+    	<h1>Are you sure?</h1>
+    </div>
+    <div data-role="content">
+    	<a href="#page1" data-role="button" data-direction="reverse">Yes, Send please</a>
+        <a href="#page1" data-role="button" data-direction="reverse">No, Abort</a>
+    </div>
+ </div>
+ <!--FIN-->
+ 
+ <!--Pagina 4 contactos-->
+<div data-role="page" id="page4" data-theme="b">
+	<div data-role="header">
+   		 <h1>Contacts</h1>
+  	</div>
+    <div data-role="content" align="right">
+    <!--Diseño de grilla para botones-->
+     	<div class="ui-grid-a">
+        	<div class="ui-block-a">
+            	<a href="tel:0362415249010" data-role="button">
+                <img class="ui-icon" src="jquery-mobile/images/phone.png">
+       				 Call
+        		</a>
+            </div>
+            <div class="ui-block-b">
+            	<a href="mailto:iariel.javauser@gmail.com" data-role="button">
+                <img class="ui-icon" src="jquery-mobile/images/mail.png">
+        			Send
+        		</a>
+            </div>
+        </div>
+        <br>
+     	<ul data-role="listview" data-dividertheme="a">
+			<li data-role="list-divider">Phone</li>
+            <li>Phone 036249010</li>
+            <li>Mobile 036249010</li>
+            <li data-role="list-divider">Email</li>
+			<li>email: arielpy@gmail.com</li>
+            <li>gtalk: iariel.javauser@gmail.com</li>
+            <li data-role="list-divider">Chat online</li>
+			<li>Skype iariel.duarte</li>
+            <li>Facebook iariel.duarte/facebook</li>
+		</ul>	      
+       
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+   	  <p align="center"><a href="#page1" data-role="button" data-icon="refresh" data-rel="back">Home</a></p>
+  </div>
+ </div> 
+ <!--FIN-->
+
+ <!--Pagina 5 acerca de-->
+<div data-role="page" id="page5" data-theme="b">
+	<div data-role="header">
+   		 <h1>About us</h1>
+  	</div>
+    <div data-role="content" align="right">
+     	<h1>SynergyApps</h1>
+     	<h4>v1.0</h4>
+     	<h4>Mobile Solutions</h4>
+     	<a href="#infoautor" data-role="button" data-icon="info" data-theme="f">Ariel Duarte ©2013</a>
+     	<h4>www.synergyapps.com.ar</h4>
+        <a href=" http://arielsource.blogspot.com.ar/" rel="external" data-role="button">Blogspot</a>
+       
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+   	  <p align="center"><a href="#page1" data-role="button" data-icon="refresh" data-rel="back">Home</a></p>
+  </div>
+ </div> 
+ <!--FIN-->
+ 
+ <!--Pagina android-->
+  <div data-role="page" id="android" data-theme="d">
+	<div data-role="header">
+   		 <h1>Android</h1>
+  	</div>
+    <div data-role="content" align="justify">
+     	<h1>Android Applications</h1>
+     	<p>Develop native mobile solution to plataform Android using Java language.</p>
+        
+    </div>
+     <div data-role="footer" data-position="fixed" data-id="footer2">
+    	<p align="center"><a href="#page1" data-role="button" data-icon="refresh">Home</a></p>
+    </div>
+ </div>
+ <!--FIN-->
+ 
+ <!--Pagina ios-->
+  <div data-role="page" id="ios" data-theme="a">
+	<div data-role="header">
+   		 <h1>iOS</h1>
+  	</div>
+    <div data-role="content" align="justify">
+     	<h1>iOS Applications</h1>
+     	<p>Develop native mobile solution to plataform iOS (iPhone and Ipad) using x-code with Objective-c language.</p>
+        
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+    	<p align="center"><a href="#page1" data-role="button" data-icon="refresh">Home</a></p>
+    </div>
+ </div>
+ <!--FIN-->
+ 
+ <!--Pagina mobile web-->
+ <div data-role="page" id="webapp" data-theme="e">
+	<div data-role="header">
+   		 <h1>Mobile Web</h1>
+  	</div>
+    <div data-role="content" align="justify">
+     	<h1>Web Applications</h1>
+     	<p>Develop mobile web solution using PhoneGap framework with HTML5 and jQuery Mobile to all plataform of smartphone.</p>
+        
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+   		<p align="center"><a href="#page1" data-role="button" data-theme="e" data-icon="refresh">Home</a></p>
+    </div>
+ </div>
+ <!--FIN-->
+ 
+ <!--Pagina infor ariel-->
+  <div data-role="page" id="infoautor" data-theme="b" >
+	<div data-role="header" data-theme="a">
+   		 <h1>About Ariel Duarte</h1>
+          <div data-role="navbar">
+			<ul>
+            	<li><a href="#qualification" class="ui-btn-active">Qualifications</a></li>
+                <li><a href="#">Career History</a></li>
+                <li><a href="#">Languages</a></li>
+            </ul>
+         </div>
+  	</div>
+    <div data-role="content">
+    <h3>Career Summary</h3>
+    
+<div data-role="collapsible" data-collapsed="true" data-theme="d">
+<h2>Profile Proffesional</h2>
+<p align="justify">        
+I am a graduated Systems Analyst, I have studied Information Systems at the Universidad Tecnológica Intercontinental. I am Java Developer with knowledge in other programming languages and framework to development of Software and their Quality Control.</p>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="d">
+<h2>Experience FoxPro Developer</h2>
+<p align="justify">        
+I have worked two years as an analyst and developer of business management systems programming with Microsoft Visual FoxPro with MySQL Database.
+</p>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="d">
+<h2>Experience Database Administrator</h2>
+<p align="justify">
+I have two years experience as a Database Administrator in Firebird with PL/SQL and other Database engines such as MySQL and PostgreSQL. I am proficient using Crystal Reports reporting engine and the development of custom applications with Java.
+</p>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="d">
+<h2>Experience Quality Enginner</h2>
+<p align="justify">
+Currently, I work as a Java Developer and Quality Engineer at Globant Resistencia, I am developing and improving automation assessment framework of test cases and creating scripts for automated test cases for web applications, using as a main tools Java2EE with Eclipse, Selenium WebDriver and TestNG. I have experience six months been working in the test case automation, using Ruby with Selenium WebDriver and Rspec.
+</p>
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="d">
+<h2>Experience JavaWeb Developer</h2>
+<p align="justify">
+I have knowledge in the developing of web application, using JSP/Servlet and JSF Apache MyFaces with Hibernate.
+</p> 
+</div>
+
+<div data-role="collapsible" data-collapsed="true" data-theme="d">
+<h2>Experience Mobile Developer</h2>
+<p align="justify">
+For seven months I am learning and developing mobile applications for Android phones. Initially started in 2D game development, at the moment I am working native applications for Android.
+</p>
+</div>
+     
+  </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+     	<p align="center"><a href="#page1" data-role="button" data-icon="refresh">Home</a></p>
+    </div>
+ </div>
+ <!--FIN-->
+ 
+ <!--Pagina resumen de calificaciones-->
+<div data-role="page" id="qualification" data-theme="b">
+	<div data-role="header">
+   		 <h3>Summary Qualifications</h3>
+  	</div>
+    <div data-role="collapsible-set">
+    <div data-role="content" align="justify">
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+     	<h2>Programming Laguage</h2>
+        	<ul data-role="listview" data-inset="true">
+            
+        	<li>•	Java2SE/EE</li>
+            <li>•	Ruby</li>
+            <li>•	Visual FoxPro</li>
+            <li>•	BASIC</li>
+            
+            </ul>
+        </div>
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Web Language</h2>
+        	
+            <ul data-role="listview" data-inset="true">
+        	<li>•	HTML/5</li>
+            <li>•	JavaScript</li>
+            <li>•	JSP/Servlet</li>
+             <li>•	JSF/MyFaces</li>
+            </ul>
+            
+           
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Mobile Language</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	Android</li>
+            <li>•	Objetive-c</li>
+            <li>•	jQuery Mobile</li>
+            <li>•	HTML5</li>
+            </ul>
+            
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+     	<h2>Server Version</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	Git/GitHub</li>
+            <li>•	TortoiseSVN</li>
+            <li>•	Subversion</li>
+            </ul>
+            
+        </div>               
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Automation</h2>
+        	
+            <ul data-role="listview" data-inset="true">
+        	<li>•	Selenium</li>
+            <li>•	TestNG</li>
+            <li>•	Rspec</li>
+            <li>•	Xpath</li>
+            </ul>
+            
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Track Tool</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	Sprint Backlog</p>
+            <li>•	Jira</li>
+            <li>•	HP QC</li>
+            </ul>
+            
+        </div>
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Method</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	Agile/Scrum</li>
+            <li>•	Analyst Structure</li>
+            <li>•	UML</li>
+            </ul>
+            
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Web Service</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	AmazonWS</li>
+            <li>•	Heroku</li>
+            </ul>
+            
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>IDE</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	Eclipse</li>
+            <li>•	Netbeans</li>
+            <li>•	Aptana</li>
+            <li>•	DreamweaverCS5.5</li>
+            <li>•	x-code</li>
+            </ul>
+            
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Desing</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	PhotoshopCS5</li>
+       		<li>•	Balsamiq Mockups</li>
+            </ul>
+            
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Database</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	MySQL</li>
+            <li>•	SQLite</li>
+            <li>•	PostgreSQL</li>
+            <li>•	Firebird</li>
+            </ul>
+            
+        </div>    
+        <div data-role="collapsible" data-collapsed="true" data-theme="d">
+        <h2>Report Enginne</h2>
+        
+        	<ul data-role="listview" data-inset="true">
+        	<li>•	Jasper Report</li>
+            <li>•	Crystal Report</li>
+            </ul>
+            
+     	</div>
+        </div>      
+    </div>
+    <div data-role="footer" data-id="footer2">
+   		 <p align="center"><a href="#page1" data-role="button" data-icon="refresh">Home</a></p>
+  </div>
+ </div> 
+ <!--FIN-->
+ 
+  <!--Pagina 7 Comunidades-->
+<div data-role="page" id="page7" data-theme="b">
+	<div data-role="header">
+   		 <h1>Community</h1>
+  	</div>
+    <div data-role="content" align="right">
+     	<ul data-role="listview" data-dividertheme="a">
+			<li data-role="list-divider">Android</li>
+            <li><a href="#register">Android Developer</a></li>
+            <li><a href="#register">Androideity</a></li>
+           
+		</ul>	      
+       
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footer2">
+   	  <p align="center"><a href="#page1" data-role="button" data-icon="refresh" data-rel="back">Home</a></p>
+  </div>
+ </div> 
+ <!--FIN-->
+ 
+  <!--Pagina Registro-->
+<div data-role="page" id="register" data-theme="c">
+	<div data-role="header">
+   		 <h1>Register</h1>
+  	</div>
+    <div data-role="content">
+     <form action="" method="get">
+           <label for="email">Email</label>
+          <input type="email" id="email" name="email"/>
+          
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name"/>
+          
+          <label for="age">Age</label>
+          <input type="range" min="19" max="50" id="age" name="age"/>
+          
+          <label for="country">Country</label>
+          <select id="country" name="country"  data-native-menu="false">
+            <option data-placeholder="false">Select Country</option>
+            <optgroup label="American">
+          	<option value="1">Argentina</option>
+            <option value="2">United State</option>
+            <option value="3">Mexico</option>
+            <option value="4">Brazil</option>
+            <option value="6">Uruguay</option>
+            </optgroup>
+            <optgroup label="Europe">
+            <option value="9">Spain</option>
+            <option value="10">England</option>
+            <option value="11">Italy</option>
+            <option value="12">Finland</option>
+            <option value="13">Germany</option>
+            </optgroup>
+            <optgroup label="Asian">
+            <option value="14">Japan</option>
+            <option value="15">China</option>
+            <option value="16">Taiwan</option>
+            </optgroup>
+           </select>
+          
+          <label for="suscribe">Sexo</label>
+           <select id="suscribe" name="suscribe" data-role="slider">
+            <option>Man</option>
+            <option>Woman</option>
+           </select>
+          
+          <fieldset data-role="controlgroup"> 
+          <legend>Date of Birth</legend>
+          <select id="day" name="day" data-native-menu="false">
+            <option data-placeholder="false">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+           </select>
+           <select id="month" name="month" data-native-menu="false">
+            <option data-placeholder="false">Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+           </select>
+           <select id="year" name="year" data-native-menu="false">
+            <option data-placeholder="false">Year</option>
+            <option value="1">1985</option>
+            <option value="2">1988</option>
+            <option value="3">2000</option>
+           </select>
+          
+          </fieldset>
+         	
+           <label for="developer">Develop</label>
+           <select id="dev" name="dev" data-native-menu="false" multiple>
+            <option data-placeholder="false">Select language</option>
+            <option value="1">Java</option>
+            <option value="2">Ruby</option>
+            <option value="3">Objective-c</option>
+            <option value="4">C#</option>
+            <option value="5">PHP</option>
+            <option value="6">ASP</option>
+
+           </select>
+         
+         <fieldset data-role="controlgroup"> 
+         	<legend>Marital Status</legend>
+            <input type="radio" name="status" id="single" checked /><label for="single">Single</label>
+            <input type="radio" name="status" id="married"/><label for="married">Married</label>
+           
+         </fieldset>
+         
+          <fieldset data-role="controlgroup"> 
+         	<legend>Work</legend>
+            <input type="checkbox" name="work" id="freelance"/><label for="freelance">Freelance</label>
+            <input type="checkbox" name="work" id="employee"/><label for="employee">Employee</label>
+           
+         </fieldset>
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment">No comment</textarea>
+         
+         <input type="submit" value="Register" data-theme="b" data-transition="flip"/>
+     </form>
+       
+    </div>
+ </div> 
+ <!--FIN-->
+</body>
+</html>

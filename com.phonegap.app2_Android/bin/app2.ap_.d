@@ -1,0 +1,21 @@
+C:\MOBILE~2\COMPHO~1.APP\bin\app2.ap_ \
+ : C:\MOBILE~2\COMPHO~1.APP\res\drawable-hdpi\icon.png \
+C:\MOBILE~2\COMPHO~1.APP\res\drawable-hdpi\splash.png \
+C:\MOBILE~2\COMPHO~1.APP\res\drawable-ldpi\icon.png \
+C:\MOBILE~2\COMPHO~1.APP\res\drawable-ldpi\splash.png \
+C:\MOBILE~2\COMPHO~1.APP\res\drawable-mdpi\icon.png \
+C:\MOBILE~2\COMPHO~1.APP\res\drawable-mdpi\splash.png \
+C:\MOBILE~2\COMPHO~1.APP\res\layout\main.xml \
+C:\MOBILE~2\COMPHO~1.APP\res\values\strings.xml \
+C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\icon.png \
+C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\splash.png \
+C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\icon.png \
+C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\splash.png \
+C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\icon.png \
+C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\splash.png \
+C:\MOBILE~2\COMPHO~1.APP\assets\www \
+C:\MOBILE~2\COMPHO~1.APP\assets\www\google.png \
+C:\MOBILE~2\COMPHO~1.APP\assets\www\index.html \
+C:\MOBILE~2\COMPHO~1.APP\assets\www\phonegap-1.1.0.js \
+C:\MOBILE~2\COMPHO~1.APP\assets\www\phonegap.js \
+C:\MOBILE~2\COMPHO~1.APP\bin\AndroidManifest.xml \

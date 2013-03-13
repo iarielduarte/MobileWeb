@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Capturando videos, audios, imagenes</title>
+<!--En este ejemplo vamos a ver The Media Capture API-->
+<script src="phonegap-1.1.0.js"></script>
+
+<script>
+
+var capturador;
+document.addEventListener("deviceready",function(){
+	//Llamada a la funcion de capturador de audio, imagenes y videos
+	capturador = navigator.device.capture;
+}, false);
+
+//Hacemos la funciones
+function audio(){
+	capturador.captureAudio(capturoOk, capturoError);
+}
+
+function imagen(){
+	capturador.captureImage(capturoOk, capturoError);
+}
+
+
+function video(){
+	capturador.captureVideo(capturoOk, capturoError);
+}
+
+function capturoError(){
+	alert("Error al capturar");
+}
+
+function capturoOk(archivos){
+	//Buscamos todos los archivos capturados
+	for(var i=0; i<archivos.length;i++){
+		var ruta = archivos[i].fullpath; //Con esto sabemos la ruta donde se creo
+		var type = archivos[i].type; //De que tipo es el archivo
+	}
+	
+	// Mas informacion : http://docs.phonegap.com/en/2.5.0/cordova_media_capture_capture.md.html#Capture
+}
+
+
+</script>
+</head>
+
+<body>
+<a href="javascript:audio()">Audio</a>
+<a href="javascript:imagen()">Imagen</a>
+<a href="javascript:video()">Video</a>
+</body>
+</html>
