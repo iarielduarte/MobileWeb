@@ -1,3 +1,4 @@
+WARNING: no icon was specified in app settings. using default.
 WARNING: no splash screen was specified in app settings. using default.
 Clonando aplicación seed para Android
 <DW>
@@ -10,7 +11,7 @@ cd C:\MOBILE~2\COMPHO~1.APP
 C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\droidGap.bat "C:\Program Files\Adobe\Adobe Dreamweaver CS5.5\Configuration\NativeAppFramework\DWPhoneGap\android\PhoneGapApp" "PhonegapApp2" com.phonegap.app2 1.0 "C:\Program Files\Android\android-sdk" 6
 ____________________
 </DW>
-CCreated project directory: C:\MobileWeb\com.phonegap.app2_Android\com.phonegap.app2
+Cc Created project directory: C:\MobileWeb\com.phonegap.app2_Android\com.phonegap.app2
 Created directory C:\MobileWeb\com.phonegap.app2_Android\com.phonegap.app2\src\com\phonegap\app2
 Added file C:\MobileWeb\com.phonegap.app2_Android\com.phonegap.app2\src\com\phonegap\app2\DefaultActivity.java
 Created directory C:\MobileWeb\com.phonegap.app2_Android\com.phonegap.app2\res
@@ -116,15 +117,15 @@ Buildfile: C:\MOBILE~2\COMPHO~1.APP\build.xml
    [crunch] Crunching PNG Files in source dir: C:\MOBILE~2\COMPHO~1.APP\res
    [crunch] To destination dir: C:\MOBILE~2\COMPHO~1.APP\bin\res
    [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-hdpi\icon.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\icon.png
-   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\icon.png: 70% size of source)
+   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\icon.png: 0% size of source)
    [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-hdpi\splash.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\splash.png
    [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\splash.png: 45% size of source)
    [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-ldpi\icon.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\icon.png
-   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\icon.png: 70% size of source)
+   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\icon.png: 0% size of source)
    [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-ldpi\splash.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\splash.png
    [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\splash.png: 45% size of source)
    [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-mdpi\icon.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\icon.png
-   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\icon.png: 70% size of source)
+   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\icon.png: 0% size of source)
    [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-mdpi\splash.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\splash.png
    [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\splash.png: 45% size of source)
    [crunch] Crunched 6 PNG files to update cache
@@ -152,4 +153,128 @@ Buildfile: C:\MOBILE~2\COMPHO~1.APP\build.xml
 debug:
 
 BUILD SUCCESSFUL
-Total time: 11 seconds
+Total time: 9 seconds
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=C:\PROGRA~1\Android\ANDROI~1
+set JAVA_HOME=C:\PROGRA~1\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd C:\MOBILE~2\COMPHO~1.APP
+C:\windows\system32\cmd.exe /u /c C:\PROGRA~1\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: C:\MOBILE~2\COMPHO~1.APP\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at C:\Program Files\Android\android-sdk
+
+-setup:
+     [echo] Project Name: app2
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for app2...
+[gettarget] Project Target:   Google APIs
+[gettarget] Vendor:           Google Inc.
+[gettarget] Platform Version: 2.1
+[gettarget] API level:        7
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for app2...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MOBILE~2\COMPHO~1.APP\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MOBILE~2\COMPHO~1.APP\bin\classes
+      [dex] input: C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] input: C:\MOBILE~2\COMPHO~1.APP\libs\phonegap.jar
+      [dex] Using Pre-Dexed annotations-23306d58b89c9a8e6e1479880a70ed77.jar <- C:\Program Files\Android\android-sdk\tools\support\annotations.jar
+      [dex] Using Pre-Dexed phonegap-61c627a1a49fa62a05bfa52d6d161201.jar <- C:\MOBILE~2\COMPHO~1.APP\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MOBILE~2\COMPHO~1.APP\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2,4KiB) with dex B (2 defs/1,1KiB). Result is 10 defs/3,5KiB. Took 0,0s
+       [dx] Merged dex A (10 defs/3,5KiB) with dex B (60 defs/124,7KiB). Result is 70 defs/156,5KiB. Took 0,1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MOBILE~2\COMPHO~1.APP\res
+   [crunch] To destination dir: C:\MOBILE~2\COMPHO~1.APP\bin\res
+   [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-hdpi\icon.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-hdpi\icon.png: 70% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-ldpi\icon.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-ldpi\icon.png: 70% size of source)
+   [crunch] Processing image to cache: C:\MOBILE~2\COMPHO~1.APP\res\drawable-mdpi\icon.png => C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry C:\MOBILE~2\COMPHO~1.APP\bin\res\drawable-mdpi\icon.png: 70% size of source)
+   [crunch] Crunched 3 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating app2-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: C:\MOBILE~2\COMPHO~1.APP\bin\app2-debug.apk
+[propertyfile] Updating property file: C:\MOBILE~2\COMPHO~1.APP\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~2\COMPHO~1.APP\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~2\COMPHO~1.APP\bin\build.prop
+[propertyfile] Updating property file: C:\MOBILE~2\COMPHO~1.APP\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
