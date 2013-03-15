@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - Edicion inline</title>
+<style type="text/css">
+#edicion {
+	border:solid black;
+	height:300px;
+	width:500px;
+}
+#tool {
+	border:solid black;
+	height:30px;
+	width:500px;
+	background:#3399FF
+}
+</style>
+<script type="text/javascript">
+function crearEnlace(){
+	var url = prompt("Escribe URL:", "http://");
+	if(url){
+		document.execCommand('createlink',false,url);
+	}
+}	
+function mostrarFuente(){
+	var content = document.getElementById('edicion').innerHTML;
+	content.replace(/</g,'&lt;');
+	content.replace(/</g,'&gt;');
+	alert(content);
+
+}
+</script>
+<!--
+Tres comando esenciales
+sCommand(obligatorio) : estring que especifica el comando que se va a ejecutar
+bUserInterface(opcionales): permite mostrar una interface de usuario
+vValue(opcional): valor a asiginar
+-->
+</head>
+
+<body>
+<h1>Elemento &lt;div&gt; Editable en HTML5</h1>
+<div id="tool">
+<input type="button" value="Negrita" onClick="document.execCommand('bold', false, null);">
+<input type="button" value="Cursiva" onClick="document.execCommand('italic', false, null);">
+<input type="button" value="Subrayado" onClick="document.execCommand('underline', false, null);">
+<input type="button" value="Crear Enlace" onClick="crearEnlace();">
+<input type="button" value="Mostrar Fuente" onClick="mostrarFuente();">
+</div>
+
+<div id="edicion" contenteditable="true">
+
+</div>
+
+</body>
+</html>

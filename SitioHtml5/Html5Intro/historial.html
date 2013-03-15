@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - Historial de Navegacion</title>
+<!--
+Las API de los historicos son:
+- window.history.length : cuantas paginas se ha movido el navegador
+- window.history.go(delta) : mover un numero
+- window.history.back() : mover paso atras
+- window.history.forward() : mover paso adelante
+- window.history.pushState : incluir datos en el historial
+- window.history.ReplaceState : reemplaza datos en el historial
+- window.history.onpopstate : muestra los datos guardados
+-->
+<script type="text/javascript">
+/*
+Creado por Ariel Duarte 13/03/2013
+*/
+	//Permite ir a una pagina anterior
+	function back(){
+		window.history.back();		
+	}
+	
+	//Permite ir a una pagina siguiente
+	function forward(){
+		var amount = document.getElementById("amount").value;
+		window.history.go(amount);		
+	}
+	
+	//Permite ir a una pagina determidada
+	function go(){
+		window.history.forward();		
+	}
+	
+	//Permite leer la cantidad de entradas
+	function loader(){
+		var lenght = window.history.length;
+		document.getElementById("length").innerHTML = "<h1>" + "Tama&ntilde;o Historial: "+ lenght +"</h1>";		
+	}
+	
+	//Permite guardar el texto en un historial
+	function pushdata(){
+		var statedata = document.getElementById("statedata").value;
+		var containerObject = {container: statedata};
+		history.pushState(containerObject,"item", "historial.html");
+	}
+	
+	//Permite leer el texto guardado
+	function popstate(event){
+		var state = "Pagina :" + document.location + " Datos: " + event.state.container;
+		document.getElementById("state").innerHTML="<h1>" + state + "</h1>";
+	}
+	
+	window.addEventListener("popstate", popData, false);
+</script>
+</head>
+
+<body onLoad="loader()">
+<h1>Trabajando con el Historial</h1>
+<input type="button" value="Atr&aacute;s" onClick="back();">
+<input type="button" value="Adelante" onClick="forward();">
+<br>
+P&aacute;ginas a moverse:
+<input id="amount" type="text"> <input type="button" value="IR" onClick="go();">
+<br>
+<br>
+<br>
+<br>
+Texo para enviar:
+<input id="statedata" type="text">
+<input type="button" value="Enviar" onClick="pushdata();">
+<div id="length"></div>
+<br>
+<div id="state"></div>
+<br>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - Drag and Drop</title>
+<style type="text/css">
+#destino1, #destino2, #destino3 {
+	float:left;
+	width:250px;
+	height:250px;
+	padding:10px;
+	margin:10px;
+}
+
+#arrastrable1, #arrastrable2, #arrastrable3 {
+	width:75px;
+	height:70px;
+	padding:5px;
+	margin:5px;
+}
+
+#destino1 {
+	background-color:#8080FF;
+}
+
+#destino2 {
+	background-color:#8080FF;
+}
+
+#destino3 {
+	background-color:#8080FF;
+}
+
+#arrastrable1 {
+	background-color:#CC0;
+}
+
+#arrastrable2 {
+	background-color:#FC0;
+}
+
+#arrastrable3 {
+	background-color:#9CF;
+}
+
+</style>
+<script type="text/javascript">
+/*
+Creado por Ariel Duarte 13/03/2013
+*/
+	//Indica cuando se empieza a arrastrar el objeto evento "ondragstart"
+	function empezar(e){
+		e.dataTransfer.effectAllowed = "move";
+		e.dataTransfer.setData("Data", e.target.getAttribute("id"));
+		e.dataTransfer.setDragImage(e.target, 0, 0);
+		return true;
+	}
+	
+	//Indica que se puede soltar el objeto destino "ondragenter"
+	function enter(e){
+		return true;
+	}
+	
+	//Indica cuando el objeto se pasa por un destino que se puede soltar "ondragover"
+	function over(e){
+		var esarrastable = e.dataTransfer.getData("Data");//Para conocer el elemento que esta siendo arrastrado
+		
+		var id = e.target.getAttribute('id'); //consigue la informacion donde se arrastra el bojeto
+		//Condiciones que dan la orden donde se puede soltar o no los objetos
+		if(id=="destino1")//Cualquier se puede arrastrar sobre destino 1
+		   return false; //indica que si se puede soltar
+		if(id=="destino2" && esarrastable == "arrastrable3")//arrastrable 3 solo se puede soltar sobre destino 2
+		   return false;//indica que si se puede soltar
+		else
+		if(id=="destino3" && (esarrastable == "arrastrable1" || esarrastable == "arrastrable2"))//arrastrable 1 y 2 se puede soltar en destino 3
+			 return false;//indica que si se puede soltar
+		else
+			return true;//indica que no se puede soltar
+		
+		
+		
+	}
+	
+	//Permite cambiar la posicion de los objetos "ondrop"
+	function drop(e){
+		var esarrastable = e.dataTransfer.getData("Data");//Para conocer el elemento que esta siendo arrastrado
+		e.target.appendChild(document.getElementById(esarrastable));//perimite cambiar la posicion del objeto
+		e.stopPropagation();//se usa este evento para evitar que el evento se siga ejecutando en el navegador
+		return false;
+	}
+	
+	//Permite limpiar los valores para un nuevo arrastre "ondragend"
+	function end(e){
+		e.dataTransfer.clearData("Data");//limpia todo los datos que se usaron en el arrastre anterior
+		return true;
+	}
+</script>
+</head>
+
+<body>
+	<h1>Ejemplo de Arrastrar y Soltar</h1>
+	<div id="destino1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+    	<div id="arrastrable1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+        1
+        </div>
+        <div id="arrastrable2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+        2
+        </div>
+        <div id="arrastrable3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+        3
+        </div>
+    </div>
+    <div id="destino2" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+    </div>
+    <div id="destino3" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+    </div>
+</body>
+</html>

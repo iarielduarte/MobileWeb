@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - Canvas Imagenes</title>
+<script type="text/javascript">
+/*
+Creado por Ariel Duarte 13/03/2013
+*/
+	function dibujarForma(){
+		//Obtenemos el elemento canvas usando el DOM
+		var lienzo = document.getElementById("miLienzo");
+		//Nos aseguramos que el navegador soporta HTML5
+		if(lienzo.getContext){
+				//Usamos getContex para usar el canvas para dibujar
+				var ctx = lienzo.getContext("2d"); 
+				//Incluimos la imagen y dibujamos la forma
+				var img = new Image();
+				img.src = 'imagenes/ixoyey.jpg'
+				img.onload = function(){
+					ctx.drawImage(img,0,0);
+					ctx.beginPath(); //indica que vamos a crear una figura geometrica
+					ctx.moveTo(30, 96); //indicamos el lugar donde queremos que inicie la figura
+					ctx.lineTo(70, 66); 
+					ctx.lineTo(103, 76); 
+					ctx.lineTo(170, 15); 
+					ctx.stroke(); //mostramos el rellenos de la figura
+				}
+				
+				} else {
+			alert("Necesita un navegador que admita la API de canvas de HTML5");
+		}
+		
+	
+	
+		
+	}
+</script>
+</head>
+
+<body onLoad="dibujarForma();">
+	<h1>Ejemplo de Canvas 3</h1>
+	<canvas id="miLienzo">
+    
+    </canvas>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTM5 - Almacenamiento de Datos</title>
+<!--
+El almacenamiento de dato se logra con estas funciones:
+Obejto:
+- sessionStorage : Guarda los datos en sesion
+- localStorage : Guarda los datos en forma local
+Funciones:
+- key()
+- getItem()
+- setItem()
+- removeItem()
+- clear()
+Atributos:
+- length attribute
+-->
+<script type="text/javascript">
+/*
+Creado por Ariel Duarte 13/03/2013
+*/
+	//Permite almacenar los datos en sesion
+	function almacenarEnSesion(){
+		var texto = document.getElementById("Datos").value;
+		sessionStorage.setItem("Datos",texto);
+	}
+	
+	//Permite obtener los datos en sesion
+	function obtenerEnSesion(){
+		document.getElementById("Datos").value = sessionStorage.getItem("Datos");
+	}
+	
+	//Permite obtener los datos en sesion
+	function borrarEnSesion(){
+		sessionStorage.removeItem("Datos");
+		document.getElementById("Datos").value = "";
+	}
+	
+	//Permite almacenar los datos en sesion
+	function almacenarEnSesion(){
+		var texto = document.getElementById("Datos").value;
+		sessionStorage.setItem("Datos",texto);
+	}
+	
+	//Permite obtener los datos en sesion
+	function obtenerEnSesion(){
+		document.getElementById("Datos").value = sessionStorage.getItem("Datos");
+	}
+	
+	//Permite obtener los datos en sesion
+	function borrarEnSesion(){
+		sessionStorage.removeItem("Datos");
+		document.getElementById("Datos").value = "";
+	}
+	
+	//Permite obtener los datos en sesion
+	function borrarEnSesion(){
+		sessionStorage.removeItem("Datos");
+		document.getElementById("Datos").value = "";
+	}
+	
+	//Permite almacenar los datos de forma local
+	function almacenaLocal(){
+		var texto = document.getElementById("datoslocal").value;
+		localStorage.setItem("Datos",texto);
+	}
+	
+	//Permite obtener los datos de forma local
+	function obtenerLocal(){
+		document.getElementById("datoslocal").value = localStorage.getItem("Datos");
+	}
+	
+	//Permite obtener los datos de forma local
+	function borrarLocal(){
+		localStorage.removeItem("Datos");
+		document.getElementById("datoslocal").value = "";
+	}
+</script>
+</head>
+
+<body>
+<h1>Almacenamiento de Datos en HTML5</h1>
+<br>
+<h4>Ejemplo de almacenar los datos en Sesion</h4>
+<br>
+Datos en Session <input id="Datos" type="text">
+<input type="button" value="Guardar" onClick="almacenarEnSesion();">
+<input type="button" value="Consultar" onClick="obtenerEnSesion();">
+<input type="button" value="Borrar" onClick="borrarEnSesion();">
+<br>
+<br>
+<h4>Ejemplo de almacenar los datos localmente</h4>
+<br>
+Datos en Session <input id="datoslocal" type="text">
+<input type="button" value="Guardar" onClick="almacenaLocal();">
+<input type="button" value="Consultar" onClick="obtenerLocal();">
+<input type="button" value="Borrar" onClick="borrarLocal();">
+
+<h4>Ejemplo que almacena numero de recargas de la sesion</h4>
+<script type="text/javascript">
+if(sessionStorage.actualizaciones){
+	sessionStorage.actualizaciones = Number(sessionStorage.actualizaciones)+1;
+}else{
+	sessionStorage.actualizaciones = 1;
+}
+document.write("Total actualizaciones :"+sessionStorage.actualizaciones);
+</script>
+<p>Actualiza la pagina para aumentar el numero de actualizaciones en el contador.</p>
+<p>Cerrar la ventana y abrela de nuevo  para comprobar  el resultado.</p>
+</body>
+</html>

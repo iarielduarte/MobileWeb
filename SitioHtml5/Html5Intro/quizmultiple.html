@@ -1,0 +1,172 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Test (múltiple con videos)</title>
+<style>
+.objeto {position:absolute;left: 0px; top: 0px; border: 2px; border-style: double; background-color: white; margin: 5px; padding: 5px; }
+
+#vid {position:absolute; visibility:hidden; z-index: 0; }
+
+</style>
+    <script type="text/javascript">
+	var datos = [
+	  ["Alemania","Berlín",false],
+	  ["Austria","Viena",false],
+	  ["Bélgica","Bruselas",false],
+	  ["Bulgaría","Sofía",false],
+	  ["Chipre","Nicosia",false],
+	  ["Dinamarca","Copenhage",false],
+	  ["Eslovaquia","Bratislava",false],
+	  ["Eslovenia","Ljubljana",false],
+	  ["España","Madrid",false],
+	  ["Estonia","Tallin",false],
+	  ["Finlandia","Helsinki",false],
+	  ["Francia","París",false],
+	  ["Grecia","Atenas",false],
+	  ["Hungría","Budapest",false],
+	  ["Irlanda","Dublín",false],
+	  ["Italia","Roma",false],
+	  ["Letonia","Riga",false],
+	  ["Lituania","Vilna",false],
+	  ["Luxemburgo","Luxemburgo",false],
+	  ["Malta","La Valeta",false],
+	  ["Holanda","Amsterdam",false],
+	  ["Polonia","Varsovia",false],
+	  ["Portugal","Lisboa",false],
+	  ["Reino Unido","Londres",false],
+	  ["República Checa","Praga",false],
+	  ["Rumanía","Bucarest",false],
+	  ["Suecia","Estocolmo",false]	  
+	  ];
+
+	var elemobjeto;
+	var np = 4;  //número de preguntas hechas en un juego
+	var elementoenmovimiento;
+	var hacermovimiento = false;
+	var intermedio = 300;
+	var col1 = 20;
+	var fila1 = 200;
+	var tamfila = 50;
+	var ranuras = new Array(np);
+	
+
+	
+function init(){
+   configurarjuego();
+} 
+
+function configurarjuego() {
+	var i;
+	var c;
+	var s;
+	var mx = col1;
+	var my = fila1;
+	var d;
+	var idunica;
+	// marca todos los datos como que no están siendo usados.
+	for (i=0;i<datos.length;i++) {
+		datos[i][2] = false;	
+	}
+	for (i=0;i<np;i++) {
+		ranuras[i] = -100;
+	}
+	for(i=0;i<np;i++) {
+		do {c = Math.floor(Math.random()*datos.length);}
+		while (datos[c][2]==true) 
+		datos[c][2]=true;  
+		idunica = "p"+String(c);
+		d = document.createElement('pais');
+    	d.innerHTML = (
+	      "<div class='objeto' id='"+idunica+"'>placeholder</div>");
+		document.body.appendChild(d);	  
+		elemobjeto = document.getElementById(idunica);
+		elemobjeto.textContent=datos[c][0];
+		elemobjeto.style.top = String(my)+"px";
+		elemobjeto.style.left = String(mx)+"px";
+		elemobjeto.addEventListener('click',seleccionarelemento,false);
+		idunica = "c"+String(c);
+		d = document.createElement('cap');
+    	d.innerHTML = (
+	      "<div class='objeto' id='"+idunica+"'>placeholder</div>");
+		document.body.appendChild(d);	  
+		elemobjeto = document.getElementById(idunica);
+		elemobjeto.textContent=datos[c][1];
+		// poner este objeto en una elección aleatoria desde ranuras vacías
+		do {s = Math.floor(Math.random()*np);}
+		while (ranuras[s]>=0) 
+		ranuras[s]=c;  
+		elemobjeto.style.top = String(fila1+s*tamfila)+"px";
+		elemobjeto.style.left = String(col1+intermedio)+"px";
+		elemobjeto.addEventListener('click',seleccionarelemento,false);
+		my +=tamfila;
+	}
+	document.f.puntuacion.value = "0";
+	return false;
+}
+
+ function seleccionarelemento(ev) {
+	 var thisx; 
+	 var thisxn;
+	 var sc;
+	 if (hacermovimiento) {
+		 if (this==elementoenmovimiento) {
+			 elementoenmovimiento.style.backgroundColor = "white";
+			 hacermovimiento = false;
+			 return;
+		 }
+		thisx= this.style.left; 
+	 	thisx = thisx.substring(0,thisx.length-2);  //elimina el px
+		thisxn = Number(thisx) + 115;
+		 elementoenmovimiento.style.left = String(thisxn)+"px";
+		 elementoenmovimiento.style.top = this.style.top;
+		 hacermovimiento = false;
+		 if (this.id.substring(1)==elementoenmovimiento.id.substring(1)) {
+			 elementoenmovimiento.style.backgroundColor = "gold";
+			 this.style.backgroundColor = "gold";
+			 document.f.salida.value = "ACIERTO";
+			 sc = 1+Number(document.f.puntuacion.value);
+			 document.f.puntuacion.value = String(sc);
+			 if (sc==np) {
+				v = document.getElementById("vid");
+				v.style.visibility = "visible";
+				v.style.zIndex="10000";
+				v.play();
+				
+						 }
+			 }
+		 else {
+			 document.f.salida.value = "FALLO";
+			 elementoenmovimiento.style.backgroundColor = "white";
+			 }
+	 }
+	 else {
+		hacermovimiento = true; 
+		elementoenmovimiento = this; 
+		elementoenmovimiento.style.backgroundColor = "tan";
+	 }
+ }
+
+
+</script>
+</head>
+<body onLoad="init();">  
+<h1>Países y Capitales de la UE</h1><br/>
+
+Pulsa en un país o capital y luego pulsa en su correspondiente capital o país.
+<p>
+Recarga para jugar de nuevo.
+<form name="f" >
+Acción: <input name="salida" type="text" value="ACIERTO O FALLO"/>
+Puntuación: <input name="puntuacion" type="text" value="0"/>
+</form>
+</p>
+
+
+<video id="vid" controls="controls"  preload="auto"> 
+<source src="aplauso2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> 
+<source src="aplauso2.theora.ogv" type='video/ogg; codecs="theora, vorbis"'> 
+<source src="aplauso2.webmvp8.webm" type="video/webm; codec="vp8, vorbis"'"> 
+Su navegador no acepta la etiqueta video de html5.
+ </video>
+</body>
+</html>

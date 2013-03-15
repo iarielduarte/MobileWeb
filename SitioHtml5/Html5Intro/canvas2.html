@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - Canvas vocadillo</title>
+<script type="text/javascript">
+/*
+Creado por Ariel Duarte 13/03/2013
+*/
+	function dibujarForma(){
+		//Obtenemos el elemento canvas usando el DOM
+		var lienzo = document.getElementById("miLienzo");
+		//Nos aseguramos que el navegador soporta HTML5
+		if(lienzo.getContext){
+				//Usamos getContex para usar el canvas para dibujar
+				var ctx = lienzo.getContext("2d"); 
+				//Dibujar con Curvas cuadraticas
+				ctx.beginPath(); //indica que vamos a crear una figura geometrica
+				ctx.moveTo(75, 25); //indicamos el lugar donde queremos que inicie la figura
+				ctx.quadraticCurveTo(25, 25, 25, 62.5);
+				ctx.quadraticCurveTo(25, 100, 50, 100);
+				ctx.quadraticCurveTo(50, 120, 30, 125);
+				ctx.quadraticCurveTo(60, 120, 65, 100);
+				ctx.quadraticCurveTo(125, 100, 125, 62.5);
+				ctx.quadraticCurveTo(125, 25, 75, 25);
+				ctx.closePath(); //indica que vamos a cerrar la creacion de una figura geometrica
+				ctx.stroke(); //mostramos el rellenos de la figura
+				
+				
+				
+				
+		} else {
+			alert("Necesita un navegador que admita la API de canvas de HTML5");
+		}
+		
+	
+	
+		
+	}
+</script>
+</head>
+
+<body onLoad="dibujarForma();">
+	<h1>Ejemplo de Canvas 2</h1>
+	<canvas id="miLienzo">
+    
+    </canvas>
+</body>
+</html>
